@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="password-box" id="password-container">
+        <h1>Password Required</h1>
+        <input type="password" id="password-input" placeholder="Enter Password">
+        <button id="password-submit">Submit</button>
+		<p id="password-error" class="error-message"></p>
+    </div>
+	<div id="gallery-container" style="display: none;">
+	<h1 class="gallery-title">My Vacation Gallery</h1>
+	<h2 class="countries">Switzerland</h2><br>
+    <div class="gallery">	
+        <div class="gallery-item">
+            <img src="images/gallery/ski1.jpeg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/ski2.jpeg" alt="Image 2">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/ski4.jpeg" alt="Image 4">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/ski5.jpeg" alt="Image 5">
+        </div>
+    </div><br>
+	
+	<h2 class="countries">Spain</h2><br>
+    <div class="gallery">	
+        <div class="gallery-item">
+            <img src="images/gallery/spain1.JPEG" alt="spain 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/spain2.JPEG" alt="spain 2">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain3.JPEG" alt="spain 3">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain4.JPEG" alt="spain 4">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain5.JPEG" alt="spain 5">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain6.JPEG" alt="spain 6">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain7.JPEG" alt="spain 7">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain8.JPEG" alt="spain 8">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain9.JPEG" alt="spain 9">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain10.JPEG" alt="spain 10">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain11.JPEG" alt="spain 11">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain12.JPEG" alt="spain 12">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain13.JPEG" alt="spain 13">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain14.JPEG" alt="spain 14">
+        </div>
+		<div class="gallery-item">
+            <img src="images/gallery/spain16.JPEG" alt="spain 16">
+        </div>
+    </div><br>
+    
+	<h2 class="countries">Japan</h2><br>
+    <div class="gallery">	
+        <div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan1.JPEG" alt="japan 1">
+        </div>
+        <div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan2.JPEG" alt="japan 2">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan3.JPEG" alt="japan 3">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan4.JPEG" alt="japan 4">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan5.JPEG" alt="japan 5">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan6.JPEG" alt="japan 6">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan7.JPEG" alt="japan 7">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan8.JPEG" alt="japan 8">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan9.JPEG" alt="japan 9">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan10.JPEG" alt="japan 10">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan11.JPEG" alt="japan 11">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan12.JPEG" alt="japan 12">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan13.JPEG" alt="japan 13">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan14.JPEG" alt="japan 14">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan15.JPEG" alt="japan 15">
+        </div>
+		<div class="gallery-item">
+			<link rel="preload">
+            <img src="images/gallery/japan16.JPEG" alt="japan 16">
+        </div>
+    </div><br>
+	
+    <div class="lightbox" id="lightbox">
+    	<span class="close" id="close">&times;</span>
+    	<span class="nav-btn" id="prev">&#8249;</span>
+    	<img class="lightbox-content" id="lightbox-img" src="images/fussball.jpeg" alt="">
+    	<span class="nav-btn" id="next">&#8250;</span>
+	</div>
+	</div>
+    <script>
+	document.addEventListener('DOMContentLoaded', () => {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const closeBtn = document.getElementById('close');
+            const prevBtn = document.getElementById('prev');
+            const nextBtn = document.getElementById('next');
+
+            let currentIndex = 0;
+
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    const imgUrl = item.querySelector('img').src;
+                    lightboxImg.src = imgUrl;
+                    lightbox.style.display = 'flex';
+                    currentIndex = index;
+                    updateNavigationButtons();
+                });
+				prevBtn.blur(); 
+            });
+
+            closeBtn.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+				prevBtn.blur(); 
+            });
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+                const imgUrl = galleryItems[currentIndex].querySelector('img').src;
+                lightboxImg.src = imgUrl;
+                updateNavigationButtons();
+				prevBtn.blur(); 
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % galleryItems.length;
+                const imgUrl = galleryItems[currentIndex].querySelector('img').src;
+                lightboxImg.src = imgUrl;
+                updateNavigationButtons();
+				prevBtn.blur(); 
+            });
+			
+			 document.addEventListener('keydown', (event) => {
+        		if (event.key === 'Escape') {
+            	lightbox.style.display = 'none';
+        		}
+				 prevBtn.blur(); 
+    		  });
+				
+			document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape') {
+					lightbox.style.display = 'none';
+				}
+			});
+
+            function updateNavigationButtons() {
+                prevBtn.style.display = currentIndex === 0 ? 'none' : 'block';
+                nextBtn.style.display = currentIndex === galleryItems.length - 1 ? 'none' : 'block';
+            }
+        });
+	</script>
+	<script>
+		const correctPassword = 'nao_ims';
+        const passwordContainer = document.getElementById('password-container');
+        const galleryContainer = document.getElementById('gallery-container');
+        const passwordInput = document.getElementById('password-input');
+        const passwordSubmit = document.getElementById('password-submit');
+        const passwordError = document.getElementById('password-error');
+        const lightbox = document.getElementById('lightbox');
+		
+        passwordSubmit.addEventListener('click', () => {
+            checkPassword();
+        });
+
+        passwordInput.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                checkPassword();
+            }
+        });
+
+        function checkPassword() {
+            const enteredPassword = passwordInput.value;
+            if (enteredPassword === correctPassword) {
+                passwordContainer.style.display = 'none';
+                galleryContainer.style.display = 'block';
+            } else {
+                passwordError.textContent = 'Incorrect password. Please try again.';
+            }
+        }
+	</script>
+</body>
+</html>

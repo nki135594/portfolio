@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="images/favicon.ico">
+<title>Impressum</title>
+</head>
+<body>
+<div class="impressum-content">
+  <div class="category">
+    <h2>Impressum</h2>
+  </div>
+  <div class="category">
+    <p>Nao Kinoshita</p>
+  </div>
+  <div class="category">
+    <p>Waldstätterstrasse 13</p>
+  </div>
+  <div class="category">
+    <p>3014 Bern</p>
+  </div>
+  <div class="category">
+    <p>nao.kinoshita@bwdbern.ch</p>
+  </div>
+<style>
+:root {
+	--bg-color: #081b29;
+	--second-bg-color: #112e42;
+	--text-color: #ededed;
+	--main-color: #00abf0;
+}
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: var(--bg-color);
+}
+
+.impressum-content {
+	padding: 1rem;
+}
+
+.category {
+	opacity: 0;
+	color: var(--text-color);
+	transform: translateY(20px);
+	transition: opacity 1s, transform 1s;
+}
+
+.show {
+	opacity: 1;
+	transform: translateY(0);
+}
+	
+.title_impressum {
+	color: #ededed;
+	text-align: center;
+}
+</style>
+		<script>
+  window.addEventListener("load", () => {
+    const categories = document.querySelectorAll(".category");
+    let delay = 0;
+
+    categories.forEach(category => {
+      setTimeout(() => {
+        category.classList.add("show");
+      }, delay);
+
+      delay += 600; // Delay each category appearance by 1 second
+    });
+  });
+</script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #8E8E8E;
+}
+.quit{
+	color: #FFFFFF;
+	background-color: #000000;
+	user-select: none;
+	font-size: 2em;
+	cursor: pointer;
+	position: fixed;
+	top: 91.8%;
+	left: 20%;
+}
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color:#000000; /* black */
+  color: white;
+  margin-bottom: 15px;
+  user-select: none;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+@viewport {
+  width: device-width;
+    zoom: 1;
+    min-zoom: 0.5;
+    max-zoom: 3;
+    user-zoom: fixed;
+}

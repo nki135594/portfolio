@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Website</title>
+
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header design -->
+<header>
+    <h1 class="logo"></h1>
+<!-- Button to open the mobile menu (initially X) -->
+<div class="menu-icon active" id="menu-icon">
+  <i class="fas fa-bars"></i>
+</div>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+		<a href="#myprojects">My Projects</a>
+		<a href="#hobbies-section">Hobbies</a>
+		<a href="gallery.html" target="_blank">Photo-Gallery</a>
+		<a href="Lebenslauf.html" id="cv-link-desktop">Personal</a>
+    </nav>
+    
+    <!-- Mobile menu (hidden by default) -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>		
+		<a href="#myprojects">My Projects</a>
+		<a href="#hobbies-section">Hobbies</a>
+		<a href="gallery.html" target="_blank">Photo-Gallery</a>
+		<a href="Lebenslauf.html" id="cv-link-mobile">Personal</a>
+    </div>
+</header>
+    <!-- home section design -->
+	<section class="home" id="home">
+		<div class="home-content">
+			<h1 class="hi" id="hi-message">Hi, ich bin Nao Kinoshita</h1>
+			<div>
+				<h3>IMS-Schüler, BWD Bern</h3>
+			</div>
+				<p class="word-animation" id="animated-paragraph">
+				  <span>Ich</span>
+				  <span>besuche</span>
+				  <span>die</span>
+				  <span>IMS</span>
+				  <span>Bwd</span>
+				  <span>Bern</span>
+				  <span>und</span>
+				  <span>die</span>
+				  <span>gibb</span>
+				  <span>-</span><br>
+				  <span>Berufsfachschule</span>
+				  <span>Bern</span>
+				  <span>seit</span>
+				  <span>2021</span><br>
+				  <span>als</span>
+				  <span>Informatiker</span>
+				  <span>EFZ</span>
+				  <span>Applikationsentwicklung.</span>
+				</p>
+			<div class="btn-box">
+				<a href="mailto: nao.kinoshita@bwdbern.ch" class="btn">E-Mail</a>
+				<a class="btn" id="lets-talk-button">My Phone</a>
+			</div>
+				<div id="popup-container">
+    				<div class="modal" id="popup-modal">
+        				<div class="modal-content">
+            				<span class="close" id="popup-close">&times;</span>
+            				<p class="message">Ich bin erreichbar unter:<br>+41 77 529 42 81</p>
+        				</div>
+    				</div>
+				</div>
+			</div>
+		<div class="home-sci" style="z-index: 0;">
+			<a href="https://www.instagram.com/luvjp14/" target="_blank"><i class="bx bxl-instagram"></i></a>
+			<a href="https://www.linkedin.com/in/nao-kinoshita-7a3b40228/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+		</div>
+	</section>
+	
+    <!-- about section design -->
+	<section class="about" id="about">
+		<h2 class="heading" id="animate-heading">About Me</h2>
+		<div class="about-img">
+			<img src="images/about.jpg" alt="me">
+			<span class="circle-spin"></span>
+		</div>
+		
+		<div class="about-content">
+			<h3>IMS-Schüler in der Bwd Bern</h3>
+			<p>Ich habe meine Ausbildung als Informatiker EFZ Applikationsentwicklung mit BM im Jahr 2021 gestartet und befinde mich jetzt im dritten Lehrjahr.<br>Neben Informatik und Programmieren treibe ich in der Freizeit sehr gerne Sport.</p>
+			<div class="btn-box btns">
+				<a href="#hobbies-section" class="btn">More</a>
+			</div>
+		</div>
+	</section>
+<!-- project design-->
+	<section class="myprojects" id="myprojects">
+  		<h2 class="heading" id="animate-projects">My Projects</h2>
+  			<div class="project-card">
+				<h3 class="projectname">Flappy Bird Game</h3>
+				<img src="images/flappy-thumbnail.png" class="flappy-bird" target="_blank" alt="flpybird" ><br>
+				<p class="viewproject">Flappy Bird ist ein Spiel, bei dem man einen Vogel steuert, indem man die Tab-taste drückt,<br> um zwischen Rohren zu fliegen, ohne sie zu berühren.</p>
+				<a class="abstract" href="pdf/IMS_Projekt_Abstract_Flappybird.pdf" target="_blank">Project-Abstract</a><br>
+				<a class="flappy-bird-try" href="projects/Original-Flappy-bird/Original-Flappy-bird/index.html" target="_blank">TRY IT OUT</a>
+  			</div>
+			<br>
+			<div class="project-card">
+				<h3 class="projectname">Brawlstars Datenbank</h3>
+				<img src="images/brawli-img.png" class="flappy-bird" target="_blank" alt="flpybird" ><br>
+				<p class="viewproject">Eine Brawlstars Datenbank mit den wichtigsten Daten des Spiels.</p>
+				<a class="abstract" href="pdf/IMS_Projekt-Abstract_brawl_db.pdf" target="_blank">Project-Abstract</a><br>
+		    </div>
+			<br>
+		    <div class="project-card">
+				<h3 class="projectname">Erste Website</h3>
+				<img src="images/first-website-thumbnail.png" class="flappy-bird" target="_blank" alt="flpybird"><br>
+				<p class="viewproject">Dies ist meine erste Website die ich mit HTML und CSS gestaltet habe.</p>
+				<a class="abstract" href="projects/GIBB Praxis Neu/dokumente_praxis/Dokumente von Praxistraining/IMS_Projekt-Abstract_erste_website.pdf" target="_blank">Project-Abstract</a><br>
+				<a class="flappy-bird-try" href="projects/GIBB Praxis Neu/index.html" target="_blank">TRY IT OUT</a>
+  			</div>
+			<br>
+			<div class="project-card">
+				<h3 class="projectname">Memory-Spiel</h3>
+				<img src="images/memory-thumbnail.png" class="flappy-bird" target="_blank" alt="flpybird"><br>
+				<p class="viewproject">Einfaches Memory-Spiel, welches ich in der Freizeit mit meinem Klassenkameraden entwickelt habe, um mehr über JavaScript zu lernen.</p>
+				<a class="flappy-bird-try" href="projects/memory-game/index.html" target="_blank">TRY IT OUT</a>
+  			</div>
+			<br>
+			<!-- <div class="project-card">
+				<h3 class="projectname">Todo-Liste</h3>
+				<img src="images/todolist-thumbnail.png" class="flappy-bird" target="_blank" alt="flpybird"><br>
+				<p class="viewproject">React und NodeJs Web-Applikation, bei der man die Todo's auflisten kann, um diese nicht zu vergessen.</p>
+				<a class="abstract" href target="_blank">Project-Abstract</a><br>
+  			</div>
+			<br>-->
+			<div class="project-card">
+				<h3 class="projectname">.NET MAUI Desktop-Applikation</h3>
+				<img src="images/MAUI_Thumbnail.jpg" class="flappy-bird" target="_blank" alt="flpybird" ><br>
+				<p class="viewproject">Eine .NET MAUI Desktop-Applikation, die sämtliche Fussballdaten anzeigt.</p>
+				<a class="abstract" href="pdf/Projectabstract_MAUI.pdf" target="_blank">Project-Abstract</a><br>
+		    </div>
+	</section>
+<!-- hobbies section design -->
+	<section class="hobbies" id="hobbies-section">
+	<h2 class="heading" id="hobbies-top animate-hobbies">My Hobbies</h2>
+	<div>
+        <div>
+          <div>
+            <div>
+              <h4 class="hobby">Fussball</h4>
+            </div>
+          </div>
+          <p class="viewproject">Der Fussballplatz ist für mich wie ein zweites Zuhause. Dieser faszinierende Sport hat mich schon als Kind<br> in seinen Bann gezogen und ich kann nicht genug davon bekommen. Die Energie auf dem Spielfeld, das taktische Denken und die Teamarbeit ziehen mich immer wieder aufs Neue an. Fussball ist für mich eine endlose Quelle der Freude und Inspiration, egal ob ich selbst spiele oder meine Lieblingsmannschaften im Fernsehen verfolge.</p><br>
+		  <img class="fussball animate__animated animate-img" src="images/fussball.jpeg" alt="fussball">
+	      <img class="hobby-img-fcw animate__animated animate-img" src="images/fcwyler.png" alt="fcwyler">
+		  <br>
+		  <a class="fcwyler-link" href="https://www.fcwyler.ch/" target="_blank">Link zur Verbandsseite</a>
+        </div>
+        <div>
+          <div>
+            <div>
+				<br>
+              <h4 class="hobby">Video Games</h4>
+            </div>
+          </div>
+          <p class="viewproject">Gaming ist eine weitere Passion, die mich seit meiner Kindheit begleitet. Videospiele bieten mir mehr als nur Unterhaltung. <br>Sie lassen mich in fantastische Welten eintauchen, auf Abenteuer gehen und meine Fähigkeiten in vielen Genres unter Beweis stellen.<br> Ob ich nun in Rollenspiele, Online-Multiplayer-Wettkämpfe oder Rätsel eintauche, Gaming ist für mich eine Möglichkeit, <br>den Alltag hinter mir zu lassen und in aufregende digitale Welten abzutauchen.</p>
+		  <img class="hobby-img" src="images/fifa.jpg" alt="fifa">
+        </div>
+		
+		<div>
+          <div>
+            <div>
+				<br>
+              <h4 class="hobby">Fishing</h4>
+            </div>
+          </div>
+          <p class="viewproject">Eine weitere ungewöhnliche Vorliebe von mir ist das Angeln in Japan. <br>Die japanische Küste bietet eine fantastische Vielfalt an Meereslebewesen, die ich beim Angeln erkunden kann. <br>Der Frieden und die Ruhe beim Angeln inmitten der wunderschönen Natur Japans ist für mich ein wunderbares Erlebnis.</p>
+		  <img class="hobby-img" src="images/fishing-1.png" alt="cod">
+		  <video autoplay muted loop controls class="fishing">
+    		<source src="videos/fishing.mp4" type="video/mp4">
+    		Your browser does not support the video tag.
+		  </video>
+        </div>
+      </div>
+	</section>
+	<!-- footer design -->
+	<footer class="footer">
+		<div class="footer-text">
+			<p>Copyright &copy; 2023 by Nao Kinoshita | All Rights Reserved.</p>
+			<a class="impressum" href="impressum.html" target="_blank">Impressum</a>
+		</div>
+
+		<div class="footer-iconTop">
+			<a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+		</div>
+	</footer>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

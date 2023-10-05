@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+    <title>Original Flappy Bird -JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet">
+    <style>        
+        canvas{
+            border: 1px solid #000;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+		<div class="alert" {margin: 0; height: 100%; overflow: hidden}>
+  			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  				Anleitung : 
+			<li>Es geht darum, einen Vogel in der Luft zu halten. </li>
+			<li>Das ist wirklich schon alles.</li>
+			<li>Jede Berührung des Touchscreens ist ein Flügelschlag; je öfter man also drückt, desto höher fliegt der Vogel</li>
+			<li>Das Problem ist: In seinem Weg befinden sich Röhren als Hindernisse, zwischen denen man hindurch fliegen muss.</li>
+		</div>
+	
+    <canvas id="bird" width="320" height="480"></canvas>
+	<button class="quit" onclick="self.close()">Quit Game</button>
+    <script src="game.js"></script>
+</body>
+</html>
